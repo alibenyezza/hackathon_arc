@@ -1,0 +1,38 @@
+{
+  "name": "ai_agent",
+  "version": "1.0.0",
+  "description": "AI Agent for hackathon_arc",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "clean": "rm -rf dist dist-test",
+    "test:build": "tsc -p tsconfig.test.json",
+    "test:models": "npm run test:build && node dist-test/test/test-models.js",
+    "test:cashflow": "npm run test:build && node dist-test/test/test-cashflow-agent.js",
+    "test:sentinel": "npm run test:build && node dist-test/test/test-sentinel-agent.js",
+    "test:allocator": "npm run test:build && node dist-test/test/test-allocator-agent.js",
+    "test:manager": "npm run test:build && node dist-test/test/test-manager-agent.js",
+    "test:agentic": "npm run test:build && node dist-test/test/test-agentic-system.js",
+    "orchestrate": "npm run build && node dist/orchestrator.js",
+    "orchestrate:scheduled": "npm run build && node dist/orchestrator.js --scheduled"
+  },
+  "keywords": [
+    "ai",
+    "agent"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@mistralai/mistralai": "^1.10.0",
+    "dotenv": "^17.2.3",
+    "ethers": "^6.15.0"
+  }
+}

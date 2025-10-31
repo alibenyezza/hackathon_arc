@@ -1,1 +1,8 @@
 .history/
+**/node_modules/
+**/dist/
+**/dist-test/
+*.log
+Ai_agent/doc/
+.env
+**/.env
