@@ -1,0 +1,14 @@
+# Foundry
+lib/
+Arc/lib/
+Arc/cache/
+Arc/out/
+Arc/broadcast/
+
+# Backups
+Arc_backup/
+
+# Environment files
+.env
+*.env
+!.env.example
