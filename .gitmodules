@@ -1,3 +1,12 @@
 [submodule "lib/openzeppelin-contracts"]
 	path = lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "YieldPoolStable/lib/openzeppelin-contracts"]
+	path = YieldPoolStable/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "YieldPoolModerate/lib/openzeppelin-contracts"]
+	path = YieldPoolModerate/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "YieldPoolHighYield/lib/openzeppelin-contracts"]
+	path = YieldPoolHighYield/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
