@@ -1,0 +1,69 @@
+{
+  "network": {
+    "name": "Arc Testnet",
+    "chainId": 5042002,
+    "rpcUrl": "https://rpc.testnet.arc.network",
+    "explorer": "https://testnet.arcscan.net"
+  },
+  "deployer": {
+    "address": "0x594CF75585509740F8ae7F148e9e0287BeE098F9"
+  },
+  "tokens": {
+    "usdc": {
+      "address": "0x3600000000000000000000000000000000000000",
+      "decimals": 6,
+      "symbol": "USDC"
+    }
+  },
+  "contracts": {
+    "safeVault": {
+      "name": "SafeVault",
+      "address": "TO_BE_UPDATED",
+      "deploymentBlock": 0,
+      "deploymentTxHash": "",
+      "description": "Main treasury management contract"
+    },
+    "yieldPoolStable": {
+      "name": "YieldPoolStable",
+      "address": "0x3892f5b89ec544cBA3a65462FAF2F7182A4eac0F",
+      "deploymentBlock": 9952534,
+      "deploymentTxHash": "0x237085bd3bbfa8c2d793b0c3a561c3d492a3c5249ad817f1486db930c2a5c4bf",
+      "apy": 300,
+      "apyPercent": "3%",
+      "riskTier": 1,
+      "riskLabel": "Low",
+      "gasUsed": 1384598,
+      "deploymentCost": "0.222920278",
+      "description": "Low-risk yield pool with 3% APY"
+    },
+    "yieldPoolModerate": {
+      "name": "YieldPoolModerate",
+      "address": "0xaB13BCe7803eC1E2f119391c47F27fC42A921597",
+      "deploymentBlock": 9952763,
+      "deploymentTxHash": "0x286c85ef5bdecdb16fc3859b5334d3703e9bd3cc7237ca7e1eb4ec07d970ca77",
+      "apy": 500,
+      "apyPercent": "5%",
+      "riskTier": 2,
+      "riskLabel": "Medium",
+      "gasUsed": 1384814,
+      "deploymentCost": "0.2232320168",
+      "description": "Medium-risk yield pool with 5% APY"
+    },
+    "yieldPoolHighYield": {
+      "name": "YieldPoolHighYield",
+      "address": "0x313e6fA23577f9A3c97F79de4D120b544159b61F",
+      "deploymentBlock": 9952886,
+      "deploymentTxHash": "0x780e145a089fad867c67eea9a1159414c14c77a949bdf76ab2e2f758124e9c6f",
+      "apy": 900,
+      "apyPercent": "9%",
+      "riskTier": 3,
+      "riskLabel": "High",
+      "gasUsed": 1384922,
+      "deploymentCost": "0.222972442",
+      "description": "High-risk yield pool with 9% APY"
+    }
+  },
+  "deploymentDate": "2025-11-07",
+  "version": "1.0.0"
+}
+

@@ -1,0 +1,45 @@
+{
+  "name": "base-arc-router",
+  "version": "1.0.0",
+  "description": "Router Bridge CCTP between Base and Arc with USYC/Aave integration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node dist/server.js",
+    "dev": "tsc && node dist/server.js",
+    "clean": "rm -rf dist",
+    "test:build": "tsc -p tsconfig.test.json",
+    "test:unit": "npm run test:build && node dist-test/test/unit.test.js",
+    "test:integration": "npm run test:build && node dist-test/test/integration.test.js",
+    "sweep": "npm run build && node dist/jobs/daily-sweep.js",
+    "settle": "npm run build && node dist/jobs/settle-day.js"
+  },
+  "keywords": [
+    "base",
+    "arc",
+    "cctp",
+    "bridge",
+    "router",
+    "usyc",
+    "aave"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^24.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@safe-global/protocol-kit": "^4.4.0",
+    "@safe-global/api-kit": "^2.4.0",
+    "dotenv": "^17.2.3",
+    "ethers": "^6.15.0",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "node-cron": "^3.0.3"
+  }
+}
+
